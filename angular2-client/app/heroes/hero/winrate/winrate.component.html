@@ -1,0 +1,12 @@
+<div id="winrate-div" *ngIf="winRate" class="container">
+    <div class="row"> 
+        <div class="col-sm-4">Wins</div>
+        <div class="col-sm-4">Losses</div>
+        <div class="col-sm-4">Win Rate</div>
+    </div>
+    <div class="row"> 
+        <div class="col-sm-4">{{winRate.wins}}</div>
+        <div class="col-sm-4">{{winRate.losses}}</div>
+        <div class="col-sm-4">{{winRate.winRate}}%</div>
+    </div>
+</div>

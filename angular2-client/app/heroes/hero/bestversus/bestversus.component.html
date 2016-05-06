@@ -1,0 +1,10 @@
+<div id="bestversus-div" *ngIf="bestversus">
+    <div class="header-div"><u>Best Versus</u></div>
+    <div class="row-div" *ngFor="#bv of bestversus"> 
+        <div class="col-1">
+            <img src="/public/images/heroes_lg/{{bv.image_name}}.png"/>
+        </div>
+        <div class="col-2">{{bv.formatted_name}}</div>
+        <div class="col-3">{{bv.count}}</div>
+    </div>
+</div>

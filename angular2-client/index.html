@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DotA 2 MEAN</title>
+
+    <base href="/">
+
+    <title>DotA 2 MEAN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="node_modules/nvd3/build/nv.d3.min.css" type="text/css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
+
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfills, in this exact order -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
+    <script src="node_modules/angular2/bundles/http.dev.js"></script>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/d3/d3.js"></script>
+    <script src="node_modules/nvd3/build/nv.d3.js"></script>
+    <script src="node_modules/ng2-nvd3/build/lib/ng2-nvd3.js"></script>
+    <script src="node_modules/ng2-nvd3/lib/ng2-nvd3.js"></script>
+
+    <script>
+      System.config({packages: {app: {format: 'register',defaultExtension: 'js'}}});
+        System.import('app/main')
+              .then(null, console.error.bind(console));
+    </script>
+  </head>
+  
+  <body>
+    <div id="background-image"></div>
+    <my-app>Loading...</my-app>
+  </body>
+  
+</html>

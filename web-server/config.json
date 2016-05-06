@@ -1,0 +1,84 @@
+{
+  "mongo": "mongodb://localhost:27017/Dota2Mean",
+  "numHeroes": 111,
+  "account_id": 111871881,
+  "matchHistorySchema": {
+    "match_id": "Number",
+    "match_seq_num": "Number",
+    "start_time": "Number",
+    "lobby_type": "Number",
+    "radiant_team_id": "Number",
+    "dire_team_id": "Number",
+    "players": [{
+      "account_id": "Number",
+      "player_slot": "Number",
+      "hero_id": "Number"
+    }]
+  },
+
+  "matchDetailsSchema": {
+    "players": [{
+      "account_id": "Number",
+      "player_slot": "Number",
+      "hero_id": "Number",
+      "hero_name": "String",
+      "item_0": "Number",
+      "item_0_name": "String",
+      "item_1": "Number",
+      "item_1_name": "String",
+      "item_2": "Number",
+      "item_2_name": "String",
+      "item_3": "Number",
+      "item_3_name": "String",
+      "item_4": "Number",
+      "item_4_name": "String",
+      "item_5": "Number",
+      "item_5_name": "String",
+      "kills": "Number",
+      "deaths": "Number",
+      "assists": "Number",
+      "leaver_status": "Number",
+      "last_hits": "Number",
+      "denies": "Number",
+      "gold_per_min": "Number",
+      "xp_per_min": "Number",
+      "level": "Number",
+      "ability_upgrades": [{
+        "ability": "Number",
+        "time": "Number",
+        "level": "Number"
+      }],
+      "additional_units": {
+        "unitname": "String",
+        "item_0": "Number",
+        "item_1": "Number",
+        "item_2": "Number",
+        "item_3": "Number",
+        "item_4": "Number",
+        "item_5": "Number"
+      }
+    }],
+    "radiant_win": "Boolean",
+    "duration": "Number",
+    "start_time": "Number",
+    "match_id": "Number",
+    "match_seq_num": "Number",
+    "tower_status_radiant": "Number",
+    "tower_status_dire": "Number",
+    "barracks_status_radiant": "Number",
+    "barracks_status_dire": "Number",
+    "cluster": "Number",
+    "first_blood_time": "Number",
+    "lobby_type": "Number",
+    "human_players": "Number",
+    "leagueid": "Number",
+    "positive_votes": "Number",
+    "negative_votes": "Number",
+    "game_mode": "Number",
+    "game_mode_name": "String",
+    "flags": "Number",
+    "engine": "Number",
+    "radiant_score": "Number",
+    "dire_score": "Number"
+  }
+}

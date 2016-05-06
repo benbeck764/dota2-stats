@@ -1,0 +1,6 @@
+<div class="column">
+    <heroesSideBar (currentHero)="currentHero = $event"></heroesSideBar>
+</div>
+<div class="column">
+    <gpm-chart *ngIf="currentHero" [currentHero]="currentHero"></gpm-chart>
+</div>

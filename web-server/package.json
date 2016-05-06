@@ -1,0 +1,25 @@
+{
+  "name": "senior-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "mongoose": "4.1.12",
+    "request": "^2.69.0"
+  },
+  "devDependencies": {
+    "forever": "^0.15.1",
+    "linq": "^3.0.5"
+  },
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@bitbucket.org/kennedyl/senior-design.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,44 @@
+{
+  "game_types": [
+    {
+      "id": 1,
+      "type": "All Pick"
+    },
+    {
+      "id": 2,
+      "type": "Captain's Mode"
+    },
+    {
+      "id": 3,
+      "type": "Random Draft"
+    },
+    {
+      "id": 4,
+      "type": "Single Draft"
+    },
+    {
+      "id": 5,
+      "type": "All Random"
+    },
+    {
+      "id": 12,
+      "type": "Least Played"
+    },
+    {
+      "id": 16,
+      "type": "Captain's Draft"
+    },
+    {
+      "id": 20,
+      "type": "All Random Deathmatch"
+    },
+    {
+      "id": 21,
+      "type": "1v1 Solo Mid"
+    },
+    {
+      "id": 22,
+      "type": "All Draft"
+    }
+  ]
+}
