@@ -1,0 +1,140 @@
+/** GENERAL FORMATTING **/
+#background-image {
+  position: fixed;
+  z-index: -2;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 125%;
+  background: transparent url("/content/images/background.jpg");
+  background-size: cover;
+}
+
+body, input[text], button { font-family: Cambria, Georgia; }
+
+/** HEROES COMPONENT **/
+#heroes-hero-div {
+  margin-left: 325px;
+  width: 1200px;
+  height: 500px;
+  display: inline-block;
+}
+
+#ng-nav-sidebar-wrapper {
+  max-width: 325px;
+  max-height: 100%;
+  height: auto;
+  position: fixed;
+  top: 10px;
+  left: 0;
+  z-index: 1;
+  transition: all 0.2s ease 0s;
+  overflow-y:auto;
+
+  #ng-nav-sidebar-buttons {
+    padding:0;
+    margin:0;
+    overflow:hidden;
+    color:rgb(27,27,27);
+    height: 100%;
+    vertical-align: bottom;
+
+    li {
+      height: 75px;
+      list-style: none;
+      position: relative;
+
+      .logo {
+        height: 75px;
+        width: 100px;
+        position:absolute;
+
+        img {
+          height: 75px;
+          width: 100px;
+
+          &:hover {
+            cursor: pointer;
+            cursor: hand;
+          }
+
+        }
+      }
+
+      .ng-nav-sidebar-label {
+        width:325px;
+        height:inherit;
+        display:block;
+        text-align: center;
+        background-color:rgb(27,27,27);
+
+        &:hover {
+          background-color:rgb(54,54,54);
+          cursor: pointer;
+          cursor: hand;
+        }
+
+        span {
+          width:325px;
+          display:block;
+          padding-left:105px;
+          line-height:75px;
+          color:rgb(123,0,0);
+          font-size:20px;
+          float:right;
+
+          &:hover {
+            color:rgb(60,0,0);
+          }
+        }
+      }
+    }
+  }
+}
+
+/** HERO COMPONENT **/
+#name-div{
+  text-align: center;
+  width: 400px;
+  height: 75px;
+  padding: 2%;
+  background-color: rgb(27,27,27);
+  color:rgb(123,0,0);
+  font-size: 32px;
+  margin: 4px;
+}
+
+#image-div{
+  text-align: center;
+  width: 400px;
+  height: 300px;
+  padding: 2%;
+  background-color: rgb(27,27,27);
+  color:rgb(123,0,0);
+  font-size: 32px;
+  margin: 4px;
+}
+
+#hero-div {
+  position: relative;
+}
+
+.col-1 {
+  width: 400px;
+  margin: 2px;
+  position:absolute;
+  left: 0;
+}
+
+.col-2 {
+  width: 700px;
+  margin: 2px;
+  position:absolute;
+  left: 404px;
+}
+
+.col-3 {
+  width: 400px;
+  position:absolute;
+  left: 1104px;
+}

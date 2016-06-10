@@ -1,0 +1,42 @@
+{
+  "site": [
+    "app/app.js",
+    "app/templates/templates.module.js",
+
+    "app/statistics/statistics.module.js",
+    "app/statistics/statistics.routes.js",
+
+    "app/statistics/heroes/heroes.module.js",
+    "app/statistics/heroes/heroes.component.js",
+    "app/statistics/heroes/heroes.controller.js",
+    "app/statistics/heroes/heroes.service.js",
+
+    "app/statistics/heroes/hero/hero.module.js",
+    "app/statistics/heroes/hero/hero.component.js",
+    "app/statistics/heroes/hero/hero.controller.js",
+
+    "app/root/root.module.js",
+    "app/root/root.controller.js",
+    "app/root/root.directive.js",
+    "app/root/root.routes.js"
+  ],
+
+  "vendorJs": [
+    "app/components/jquery/dist/jquery.min.js",
+
+    "app/components/angular/angular.min.js",
+    "app/components/angular-mocks/angular-mocks.js",
+    "app/components/angular-component-router/angular_1_router.js",
+    "app/components/angular-bootstrap/ui-bootstrap.min.js",
+    "app/components/angular-bootstrap/ui-bootstrap-tpls.min.js",
+    "app/components/angular-resource/angular-resource.min.js",
+    "app/components/angular-cookies/angular-cookies.min.js",
+    "app/components/angular-sanitize/angular-sanitize.min.js",
+    "app/components/angular-animate/angular-animate.min.js",
+    "app/components/bootstrap/dist/js/bootstrap.min.js"
+  ],
+
+  "style": [
+    "app/components/bootstrap/dist/css/bootstrap.min.css"
+  ]
+}
