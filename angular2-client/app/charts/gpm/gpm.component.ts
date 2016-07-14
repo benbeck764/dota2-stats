@@ -1,10 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-//import { nvD3 } from 'ng2-nvd3/lib/ng2-nvd3';
-
 import { GPMChartData, ChartsService } from '../charts.service';
 import { Hero } from '../../heroes/heroes.service';
-declare let d3: any;
 
 @Component({
   selector: 'gpm-chart',
