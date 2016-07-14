@@ -9,12 +9,12 @@
         <!--<div class="col-lg-4"><u>Abilities</u></div>-->
     </div>
     <div id="matches-div-inner">
-        <div class="row row-div" *ngFor="#detail of details">
+        <div class="row row-div" *ngFor="let detail of details">
             <div class="col-1" >{{detail.results}}</div>
             <div class="col-2">{{detail.mode}}</div>
             <div class="col-3">{{detail.kda}}</div>
             <div class="col-4">{{detail.duration}}</div>
-            <div id="img-div" class="col-5" *ngFor="#item of detail.items">
+            <div id="img-div" class="col-5" *ngFor="let item of detail.items">
                 <img src="/public/images/items_lg/{{item.image_name}}.png"/>
             </div>
             <!--<div *ngIf="detail.abilities.length > 0" id="abilities-div" class="col-lg-4">

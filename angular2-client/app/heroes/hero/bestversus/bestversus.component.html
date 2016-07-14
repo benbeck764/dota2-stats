@@ -1,6 +1,6 @@
 <div id="bestversus-div" *ngIf="bestversus">
     <div class="header-div"><u>Best Versus</u></div>
-    <div class="row-div" *ngFor="#bv of bestversus"> 
+    <div class="row-div" *ngFor="let bv of bestversus">
         <div class="col-1">
             <img src="/public/images/heroes_lg/{{bv.image_name}}.png"/>
         </div>

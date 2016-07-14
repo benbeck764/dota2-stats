@@ -1,5 +1,5 @@
-import { Component, Input, OnInit, OnChanges, SimpleChange } from 'angular2/core';
-import { Router } from 'angular2/router';
+import { Component, Input, OnInit, OnChanges, SimpleChange } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { Hero } from '../../heroes.service';
 import { LastHitsDenies, StatsService } from '../statistics/statistics.service';

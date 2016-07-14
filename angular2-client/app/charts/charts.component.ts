@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from 'angular2/core';
-import { Router } from 'angular2/router';
+import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { HeroesSideBarComponent } from './heroesSideBar/heroesSideBar.component';
 import { ChartsGPMComponent } from './gpm/gpm.component';

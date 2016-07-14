@@ -1,6 +1,6 @@
-import { Component, OnInit, Input } from 'angular2/core';
+import { Component, OnInit, Input } from '@angular/core';
 
-import { nvD3 } from 'ng2-nvd3/lib/ng2-nvd3';
+//import { nvD3 } from 'ng2-nvd3/lib/ng2-nvd3';
 
 import { GPMChartData, ChartsService } from '../charts.service';
 import { Hero } from '../../heroes/heroes.service';
