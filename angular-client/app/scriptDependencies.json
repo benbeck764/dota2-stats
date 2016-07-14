@@ -4,7 +4,6 @@
     "app/templates/templates.module.js",
 
     "app/statistics/statistics.module.js",
-    "app/statistics/statistics.routes.js",
 
     "app/statistics/heroes/heroes.module.js",
     "app/statistics/heroes/heroes.component.js",
@@ -15,10 +14,7 @@
     "app/statistics/heroes/hero/hero.component.js",
     "app/statistics/heroes/hero/hero.controller.js",
 
-    "app/root/root.module.js",
-    "app/root/root.controller.js",
-    "app/root/root.directive.js",
-    "app/root/root.routes.js"
+    "app/root/root.module.js"
   ],
 
   "vendorJs": [

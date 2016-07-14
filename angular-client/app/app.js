@@ -15,7 +15,7 @@
       views on a page, nested views, and most importantly state.
       (This functionality should be implemented in Angular 2.0!)
       See: http://angularjs.blogspot.com/2015/09/angular-2-survey-results.html */
-      'ui.router',
+      'ngComponentRouter',
 
       /* Bootstrap's components in Angular */
       'ui.bootstrap',
@@ -31,5 +31,6 @@
       'statistics',
       'heroes',
       'hero'
+
     ]);
 })();

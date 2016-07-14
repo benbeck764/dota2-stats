@@ -1,5 +1,5 @@
 (function() {
   'use strict';
 
-  angular.module('templates', ['ui.router', 'ui.bootstrap']);
+  angular.module('templates', ['ui.bootstrap']);
 })();
