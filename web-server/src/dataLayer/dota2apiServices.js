@@ -4,6 +4,10 @@ var config = require('../../config');
 var matchHistoryModelName = 'match_histories';
 var matchDetailsModelName = 'match_details';
 
+//set up the model for the match_history & match_detail collection
+database.createModel(matchHistoryModelName, config.matchHistorySchema);
+database.createModel(matchDetailsModelName, config.matchDetailsSchema);
+
 exports.addMatches = function(matches, callback){
 	database.getModel(matchHistoryModelName, function(err, model) {
 		var i = 0;
@@ -20,7 +24,7 @@ exports.addMatches = function(matches, callback){
 
 exports.getMatches = function(success, error) {
 	database.getModel(matchHistoryModelName, function(err, model) {
-		model.find({}).lean().exec(function(err, matches) {
+		model.find({}).batchSize(100000000).lean().exec(function(err, matches) {
 			if(err) {
 				error(err);
 			} else {
@@ -29,13 +33,13 @@ exports.getMatches = function(success, error) {
 		});
 	});
 };
-
+var x = 0;
 exports.addMatchDetails = function(matchDetails, callback){
 	database.getModel(matchDetailsModelName, function(err, model) {
 		var id = matchDetails.match_id;
-		console.log(id);
-		console.log(matchDetails.players[0].ability_upgrades);
 		if(id) {
+			x++;
+			console.log(x);
 			model.update({match_id: matchDetails.match_id}, matchDetails, {upsert: true}, function(err){
 				callback(err);
 			});

@@ -3,7 +3,7 @@ var express = require('express'),
     config = require('../../config'),
     router = express.Router()
 
-var  _dataServices = require('../dataLayer/dota2apiServices.js');
+var _dataServices = require('../dataLayer/dota2apiServices.js');
 var _devKey = "F99837D4DF07828F1C85C71700B0F9BD";
 var _accountId = "111871881";
 var _numHeroes = config.numHeroes;
@@ -11,6 +11,7 @@ var _format = "JSON";
 var _language = "en";
 var _matchHistoryUri = "https://api.steampowered.com/IDOTA2Match_570/GetMatchHistory/v001/";
 var _matchDetailsUri = "https://api.steampowered.com/IDOTA2Match_570/GetMatchDetails/v001/";
+
 
 router.get('/GetMatchHistory', function (req, res) {
   var heroId = 1;
@@ -22,21 +23,20 @@ router.get('/GetMatchHistory', function (req, res) {
              var matches = json.result.matches;
              _dataServices.addMatches(matches, function(err) {
                  if(err) {
-                     res.sendStatus(500);
+                     //res.sendStatus(500);
                  } else {
-                     res.sendStatus(200);
+                     //res.sendStatus(200);
                  }
 
              });
          } else {
-             res.sendStatus(500);
+             //res.sendStatus(500);
          }
       });
   }
 });
 
 router.get('/GetMatchDetails', function(req, res) {
-    var match_id = req.params.match_id;
     _dataServices.getMatches(function(matches) {
         var i = 0;
         for(i; i < matches.length; i++) {
@@ -46,15 +46,15 @@ router.get('/GetMatchDetails', function(req, res) {
                    var json = JSON.parse(body);
                    var matchDetails = json.result;
                      _dataServices.addMatchDetails(matchDetails, function(err) {
-                        if(err) { res.sendStatus(500); }
+                        if(err) { /*res.sendStatus(500);*/ }
                     });
-               } else {
-                   res.sendStatus(500);
+                } else {
+                   //res.sendStatus(500);
                }
             });
         }
     }, function(err) {
-        res.sendStatus(500);
+        //res.sendStatus(500);
     })
 
 });

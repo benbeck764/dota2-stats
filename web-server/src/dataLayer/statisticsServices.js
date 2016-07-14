@@ -5,10 +5,6 @@ var _accountId = config.account_id;
 var matchHistoryModelName = 'match_histories';
 var matchDetailsModelName = 'match_details';
 
-//set up the model for the match_history collection
-database.createModel(matchHistoryModelName, config.matchHistorySchema);
-database.createModel(matchDetailsModelName, config.matchDetailsSchema);
-
 exports.getPlayerDetailsByHero = function(id, success, error){
     database.getModel(matchDetailsModelName, function(err, model) {
         model.find
