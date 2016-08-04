@@ -1,20 +1,20 @@
 <div id="hero-div">
   <div class="col-1">
-    <div id="name-div">{{$ctrl.currentHero.formatted_name}}</div>
-    <div id="image-div">
-      <img src="content/images/heroes_vert/{{currentHero.image_name}}.jpg"/>
+    <div ng-if="heroCtrl.currentHero" id="name-div">{{heroCtrl.currentHero.formatted_name}}</div>
+    <div ng-if="heroCtrl.currentHero" id="image-div">
+      <img src="content/images/heroes_vert/{{heroCtrl.currentHero.image_name}}.jpg"/>
     </div>
-    <!--<kda ng-if="heroCtrl.currentHero" currentHero="heroCtrl.currentHero"></kda>-->
-    <!--<winrate ng-if="heroCtrl.currentHero" currentHero="heroCtrl.currentHero"></winrate>-->
-    <!--<mostuseditems ng-if="heroCtrl.currentHero" currentHero="heroCtrl.currentHero"></mostuseditems>-->
+    <kda ng-if="heroCtrl.currentHero" current-hero="heroCtrl.currentHero"></kda>
+    <winrate ng-if="heroCtrl.currentHero" current-hero="heroCtrl.currentHero"></winrate>
+    <mostuseditems ng-if="heroCtrl.currentHero" current-hero="heroCtrl.currentHero"></mostuseditems>
   </div>
-  <!--<div class="col-2">
-    <matchdetails ng-if="heroCtrl.currentHero" currentHero="heroCtrl.currentHero"></matchdetails>
+  <div class="col-2">
+    <matchdetails ng-if="heroCtrl.currentHero" current-hero="heroCtrl.currentHero"></matchdetails>
   </div>
   <div class="col-3">
-    <permin ng-if="heroCtrl.currentHero" currentHero="heroCtrl.currentHero"></permin>
-    <lhdeny ng-if="heroCtrl.currentHero" currentHero="heroCtrl.currentHero"></lhdeny>
-    <bestversus ng-if="heroCtrl.currentHero" currentHero="heroCtrl.currentHero"></bestversus>
-    <worstversus ng-if="heroCtrl.currentHero" currentHero="heroCtrl.currentHero"></worstversus>
-  </div>-->
+    <permin ng-if="heroCtrl.currentHero" current-hero="heroCtrl.currentHero"></permin>
+    <lhdeny ng-if="heroCtrl.currentHero" current-hero="heroCtrl.currentHero"></lhdeny>
+    <bestversus ng-if="heroCtrl.currentHero" current-hero="heroCtrl.currentHero"></bestversus>
+    <worstversus ng-if="heroCtrl.currentHero" current-hero="heroCtrl.currentHero"></worstversus>
+  </div>
 </div>

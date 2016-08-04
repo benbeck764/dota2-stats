@@ -4,12 +4,8 @@
   angular.module('hero')
     .component('hero', {
       templateUrl: 'statistics/heroes/hero/hero.template.html',
-      controller: function() {
-        this.$onChanges = function(changes) {
-          console.log('TEST: ' + changes);
-          this.currentHero = changes;
-        };
-      },
+      controllerAs: 'heroCtrl',
+      controller: 'HeroController',
       bindings: {
         currentHero: '<'
       }

@@ -1,0 +1,10 @@
+<div id="bestversus-div" ng-if="bvCtrl.bestversus">
+  <div class="header-div-bv"><u>Best Versus</u></div>
+  <div class="row-div-bv" ng-repeat="bv in bvCtrl.bestversus">
+    <div class="col-1-bv">
+      <img src="/content/images/heroes_lg/{{bv.image_name}}.png"/>
+    </div>
+    <div class="col-2-bv">{{bv.formatted_name}}</div>
+    <div class="col-3-bv">{{bv.count}}</div>
+  </div>
+</div>

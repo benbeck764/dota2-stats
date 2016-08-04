@@ -1,0 +1,18 @@
+<div id="most-used-items-div">
+  <div id="header-div">
+    <div class="row">
+      <div class="col-sm-6">Item</div>
+      <div class="col-sm-6">Times Used</div>
+    </div>
+  </div>
+
+  <div id="most-used-items-div-inner">
+    <div class="row" ng-repeat="item in mostUsedCtrl.mostUsed">
+      <div class="col-sm-3 row-div">
+        <img src="/content/images/items_lg/{{item.image_name}}.png"/>
+      </div>
+      <div class="col-sm-5 row-div">{{item.formatted_name}}</div>
+      <div class="col-sm-3 row-div">{{item.count}}</div>
+    </div>
+  </div>
+</div>

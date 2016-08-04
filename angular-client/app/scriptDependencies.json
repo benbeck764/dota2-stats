@@ -3,7 +3,10 @@
     "app/app.js",
     "app/templates/templates.module.js",
 
+    "app/overview/overview.module.js",
+
     "app/statistics/statistics.module.js",
+    "app/statistics/statistics.service.js",
 
     "app/statistics/heroes/heroes.module.js",
     "app/statistics/heroes/heroes.component.js",
@@ -13,6 +16,30 @@
     "app/statistics/heroes/hero/hero.module.js",
     "app/statistics/heroes/hero/hero.component.js",
     "app/statistics/heroes/hero/hero.controller.js",
+
+    "app/statistics/heroes/hero/kda/kda.component.js",
+    "app/statistics/heroes/hero/kda/kda.controller.js",
+
+    "app/statistics/heroes/hero/winrate/winrate.component.js",
+    "app/statistics/heroes/hero/winrate/winrate.controller.js",
+
+    "app/statistics/heroes/hero/mostuseditems/mostuseditems.component.js",
+    "app/statistics/heroes/hero/mostuseditems/mostuseditems.controller.js",
+
+    "app/statistics/heroes/hero/matches/matches.component.js",
+    "app/statistics/heroes/hero/matches/matches.controller.js",
+
+    "app/statistics/heroes/hero/permin/permin.component.js",
+    "app/statistics/heroes/hero/permin/permin.controller.js",
+
+    "app/statistics/heroes/hero/lhdeny/lhdeny.component.js",
+    "app/statistics/heroes/hero/lhdeny/lhdeny.controller.js",
+
+    "app/statistics/heroes/hero/bestversus/bestversus.component.js",
+    "app/statistics/heroes/hero/bestversus/bestversus.controller.js",
+
+    "app/statistics/heroes/hero/worstversus/worstversus.component.js",
+    "app/statistics/heroes/hero/worstversus/worstversus.controller.js",
 
     "app/root/root.module.js"
   ],

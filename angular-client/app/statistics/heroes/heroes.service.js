@@ -9,7 +9,7 @@
     var service = this;
 
     service.data = {
-      heroes: []
+      heroes: {}
     };
 
     service.update = function() {

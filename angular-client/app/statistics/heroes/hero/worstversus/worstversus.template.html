@@ -1,0 +1,10 @@
+<div id="worstversus-div" ng-if="wvCtrl.worstversus">
+  <div class="header-div-wv"><u>Worst Versus</u></div>
+  <div class="row-div-wv" ng-repeat="wv in wvCtrl.worstversus">
+    <div class="col-1-wv">
+      <img src="/content/images/heroes_lg/{{wv.image_name}}.png"/>
+    </div>
+    <div class="col-2-wv">{{wv.formatted_name}}</div>
+    <div class="col-3-wv">{{wv.count}}</div>
+  </div>
+</div>

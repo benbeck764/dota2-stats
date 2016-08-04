@@ -1,0 +1,27 @@
+<div id="matches-div">
+  <div id="header-div">Match Details</div>
+  <div class="row row-div-matches">
+    <div class="col-1-matches"><u>Results</u></div>
+    <div class="col-2-matches"><u>Game Mode</u></div>
+    <div class="col-3-matches"><u>K/D/A</u></div>
+    <div class="col-4-matches"><u>Duration</u></div>
+    <div class="col-5-h-matches"><u>Items</u></div>
+    <!--<div class="col-lg-4"><u>Abilities</u></div>-->
+  </div>
+  <div id="matches-div-inner">
+    <div class="row row-div-matches" ng-repeat="detail in matchesCtrl.details">
+      <div class="col-1-matches" >{{detail.results}}</div>
+      <div class="col-2-matches">{{detail.mode}}</div>
+      <div class="col-3-matches">{{detail.kda}}</div>
+      <div class="col-4-matches">{{detail.duration}}</div>
+      <div id="img-div" class="col-5-matches" ng-repeat="item in detail.items">
+        <img src="/content/images/items_lg/{{item.image_name}}.png"/>
+      </div>
+      <!--<div *ngIf="detail.abilities.length > 0" id="abilities-div" class="col-lg-4">
+          <div class="abilities-img-div" *ngFor="#ability of detail.abilities">
+              <img src="/content/images/abilities_lg/{{ability.image_name}}.png"/>
+          </div>
+      </div>-->
+    </div>
+  </div>
+</div>

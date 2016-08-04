@@ -3,6 +3,6 @@
 
   angular.module('statistics', [])
     .component('statistics', {
-      template: 'statistics/statistics.template.html'
+      templateUrl: 'statistics/statistics.template.html'
     });
 })();

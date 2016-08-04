@@ -1,12 +1,14 @@
 (function() {
   'use strict';
 
-  angular.module('root', [])
+  angular.module('root', ['ngComponentRouter'])
     .value('$routerRootComponent', 'root')
     .component('root', {
-      templateUrl: 'overview/overview.template.html',
+      templateUrl: 'root/root.template.html',
       $routeConfig: [
-        {name: 'Statistics', path: '/statistics/...', component: 'statistics', useAsDefault: true}
+        {path: '/', name: 'Home', component: 'overview', useAsDefault: true},
+        {path: '/statistics', name: 'Statistics', component: 'statistics'},
+        {path: '/**', redirectTo: ['Home']}
       ]
     });
 })();
